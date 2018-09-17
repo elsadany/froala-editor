@@ -3,7 +3,9 @@
 $('#{{$id}}').froalaEditor({
         imageUploadURL: '{{ config('froala.upload_url') }}',
         toolbarSticky: true,
-        
+         requestHeaders: {
+            'X-CSRF-TOKEN': '{{ csrf_token() }}'
+        },
 
         imageUploadParams: {
           id: '{{$id}}'
