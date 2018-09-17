@@ -10,9 +10,9 @@ integrate froala editor with laravel
 add you upload image url  and remove image url in config/froala.php
 
 ## Usage 
-- call assets `<?= \Elsayednofal\FroalaEditor\Froala::initCss()?>
+- call assets ```php <?= \Elsayednofal\FroalaEditor\Froala::initCss()?>
 
-<?= \Elsayednofal\FroalaEditor\Froala::initJs()?>`
+<?= \Elsayednofal\FroalaEditor\Froala::initJs()?>```
 
 - init editor using `<?= \Elsayednofal\FroalaEditor\Froala::initEditor("name",'id', 'content', $is_required=true)?>`
 
